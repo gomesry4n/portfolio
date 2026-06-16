@@ -1,0 +1,58 @@
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #041833;
+    font-weight: 700;
+}
+
+.minhaFoto {
+    width: 400px;
+    max-width: 100%;
+    float: right;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.minhaFoto:hover {
+    transform: scale(1.03);
+}
+
+.texto {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #444;
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+    .minhaFoto {
+        width: 260px;
+        margin-left: 1.5rem;
+    }
+
+    .texto {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .minhaFoto {
+        float: none;
+        display: block;
+        margin: 0 auto 2rem auto;
+        width: 240px;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .texto {
+        text-align: left;
+        line-height: 1.8;
+    }
+}

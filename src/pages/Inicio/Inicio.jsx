@@ -1,5 +1,19 @@
-const Inicio = () =>{
-    return <h1>Página Inicial</h1>
-}
+import styles from "./Inicio.module.css";
+import Card from "../../componentes/Card/Card";
+import Posts from "../../json/posts.json";
 
-export default Inicio
+const Inicio = () => {
+  return (
+    <main>
+      <ul className={styles.post}>
+        {Posts.map((post) => (
+          <li key={post.id}>
+            <Card post={post} />
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
+};
+
+export default Inicio;
