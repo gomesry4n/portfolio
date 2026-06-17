@@ -29,35 +29,8 @@
   line-height: 1.4;
 }
 
-.botaoLer {
-  display: inline-block;
-  padding: 0.85rem 1.8rem;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--branco);
-  background: var(--azul-medio);
-  border: none;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.botaoLer:hover {
-  background: var(--azul-escuro);
-  transform: translateY(-2px);
-}
-
-.botaoLer:active {
-  transform: translateY(0);
-}
-
 @media (max-width: 1100px) {
   .post {
     width: 336px;
-  }
-
-  .botaoLer {
-    font-size: 1.05rem;
   }
 }

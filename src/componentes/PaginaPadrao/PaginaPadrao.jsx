@@ -1,12 +1,11 @@
-import styles from "./PaginaPadrao.module.css";
-import Banner from "../Baner/Banner";
+import Banner from "../Banner/Banner";
 import { Outlet } from "react-router";
 
 const PaginaPadrao = () => {
   return (
     <div>
-        <Banner />
-        <Outlet />
+      <Banner />
+      <Outlet />
     </div>
   );
 };

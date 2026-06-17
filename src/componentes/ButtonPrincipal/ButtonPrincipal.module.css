@@ -1,0 +1,35 @@
+.botaoLer {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--branco);
+  background: var(--azul-medio);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.botaoLer:hover {
+  background-color: rgb(0, 0, 141);
+  transform: translateY(-2px);
+}
+
+.botaoLer:active {
+  transform: translateY(0);
+}
+
+.botaoLer.lg{
+    padding: 1.25rem 2.5rem;
+    font-size: 1.25rem; 
+    line-height: 1rem;
+}
+
+@media (max-width: 1100px) {
+
+  .botaoLer {
+    font-size: 1.05rem;
+  }
+}

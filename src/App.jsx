@@ -1,10 +1,12 @@
-import { BrowserRouter, Route, Routes } from 'react-router';
-import './App.css';
-import Inicio from './pages/Inicio/Inicio';
-import SobreMim from './pages/SobreMim/SobreMim';
-import Menu from './componentes/Menu/Menu';
-import Rodape from './componentes/Rodape/Rodape';
-import PaginaPadrao from './componentes/PaginaPadrao/PaginaPadrao';
+import { BrowserRouter, Route, Routes } from "react-router";
+import "./App.css";
+import Inicio from "./pages/Inicio/Inicio";
+import SobreMim from "./pages/SobreMim/SobreMim";
+import Menu from "./componentes/Menu/Menu";
+import Rodape from "./componentes/Rodape/Rodape";
+import PaginaPadrao from "./componentes/PaginaPadrao/PaginaPadrao";
+import Post from "./pages/Post/Post";
+import NaoEncontrada from "./pages/NaoEncontrada/NaoEncontrada";
 
 const App = () => {
   return (
@@ -17,10 +19,9 @@ const App = () => {
           <Route path="sobremim" element={<SobreMim />} />
         </Route>
 
-        <Route
-          path="*"
-          element={<div>Erro 404 - Página não encontrada</div>}
-        />
+        <Route path="post/:id" element={<Post />} />
+
+        <Route path="*" element={<NaoEncontrada />} />
       </Routes>
 
       <Rodape />
